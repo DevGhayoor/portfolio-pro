@@ -9,14 +9,13 @@ import Services from "./sections/Services";
 import Contact from "./sections/Contact";
 
 import Loader from "./components/Loader";
-
+import Experience from "./sections/Experience";
+import Certificates from "./sections/Certificates";
+import Achievements from "./sections/Achievements";
 
 function App() {
-
   return (
-
     <div className="bg-[#050816] min-h-screen text-white">
-
       <Loader />
 
       <Navbar />
@@ -35,11 +34,14 @@ function App() {
 
       <Footer />
 
+      <Experience />
+
+      <Certificates />
+      
+      <Achievements />
+
     </div>
-
   );
-
 }
-
 
 export default App;

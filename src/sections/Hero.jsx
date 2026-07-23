@@ -1,12 +1,7 @@
 import { motion } from "framer-motion";
 import profile from "../assets/images/profile.png";
 import { Typewriter } from "react-simple-typewriter";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaDownload,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload, FaArrowRight } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -19,21 +14,17 @@ function Hero() {
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500/20 blur-[120px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
-
         {/* LEFT */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-
           <span className="inline-block px-4 py-2 rounded-full bg-violet-600/20 border border-violet-500 text-violet-300 text-sm">
             🟢 Available For Freelance
           </span>
 
-          <h2 className="mt-8 text-gray-300 text-xl">
-            Hello, I'm
-          </h2>
+          <h2 className="mt-8 text-gray-300 text-xl">Hello, I'm</h2>
 
           <h1 className="mt-2 text-5xl md:text-7xl font-extrabold text-white leading-tight">
             Ghayoor <br />
@@ -58,15 +49,14 @@ function Hero() {
           </div>
 
           <p className="mt-6 max-w-xl text-gray-400 leading-8">
-            I build modern, responsive and high-performance websites
-            using React, JavaScript and Tailwind CSS with clean code
-            and premium user experience.
+            Hi, I'm Ghayoor Khan React Frontend Developer I build modern,
+            responsive and high-performance web applications using React,
+            JavaScript and Tailwind CSS.
           </p>
 
           {/* Buttons */}
 
           <div className="mt-10 flex flex-wrap gap-4">
-
             <a
               href="#contact"
               className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 hover:shadow-[0_0_35px_rgba(139,92,246,.6)] transition-all duration-300 px-7 py-4 rounded-xl text-white font-semibold"
@@ -83,13 +73,27 @@ function Hero() {
               Download CV
               <FaDownload />
             </a>
+          </div>
+          <div className="grid grid-cols-3 gap-6 mt-10">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-violet-400">15+</h3>
+              <p className="text-gray-400 text-sm mt-1">Projects</p>
+            </div>
 
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-cyan-400">10+</h3>
+              <p className="text-gray-400 text-sm mt-1">Technologies</p>
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-pink-400">100%</h3>
+              <p className="text-gray-400 text-sm mt-1">Passion</p>
+            </div>
           </div>
 
           {/* Social */}
 
           <div className="flex gap-6 mt-10">
-
             <a
               href="https://github.com/DevHGhayoor"
               target="_blank"
@@ -105,9 +109,7 @@ function Hero() {
             >
               <FaLinkedin />
             </a>
-
           </div>
-
         </motion.div>
 
         {/* RIGHT */}
@@ -130,9 +132,7 @@ function Hero() {
           }}
           className="flex justify-center"
         >
-
           <div className="relative">
-
             <div className="absolute inset-0 rounded-full bg-violet-600 blur-3xl opacity-40 animate-pulse"></div>
 
             <img
@@ -140,11 +140,8 @@ function Hero() {
               alt="Profile"
               className="relative w-72 md:w-[420px] rounded-full border-4 border-violet-500 shadow-[0_0_60px_rgba(139,92,246,.6)]"
             />
-
           </div>
-
         </motion.div>
-
       </div>
 
       {/* Scroll */}
@@ -157,23 +154,14 @@ function Hero() {
         }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center"
       >
-
         <a href="#about">
-
           <div className="w-7 h-12 border-2 border-violet-400 rounded-full flex justify-center">
-
             <div className="w-1.5 h-3 bg-violet-400 rounded-full mt-2"></div>
-
           </div>
 
-          <p className="text-gray-400 text-sm mt-2">
-            Scroll Down
-          </p>
-
+          <p className="text-gray-400 text-sm mt-2">Scroll Down</p>
         </a>
-
       </motion.div>
-
     </section>
   );
 }
