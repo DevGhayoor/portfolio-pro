@@ -31,23 +31,20 @@ function Projects() {
       ],
       github: "https://github.com/DevHGhayoor",
       live: "#",
-    },
-
-    {
-      title: "Developer Portfolio",
-      image: portfolio,
-      featured: false,
-      description:
-        "Modern developer portfolio with animations, responsive design and premium UI components.",
-      tech: [
-        "React",
-        "Framer Motion",
-        "Tailwind CSS",
-      ],
-      github: "https://github.com/DevHGhayoor",
-      live: "#",
-    },
-
+    },{
+  title: "Developer Portfolio",
+  image: portfolio,
+  featured: false,
+  description:
+    "Modern developer portfolio with animations, responsive design and premium UI components.",
+  tech: [
+    "React",
+    "Framer Motion",
+    "Tailwind CSS",
+  ],
+  github: "https://github.com/DevHGhayoor",
+  live: "https://portfolio-8iby00exc-ghayoor-labs.vercel.app",
+},
     {
       title: "Education Dashboard",
       image: dashboard,
